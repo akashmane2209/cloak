@@ -4,7 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "del ./build/*",
+    "build": "npm run clean && tsc"
+  },
+  "devDependencies": {
+    "del-cli": "^3.0.0",
+    "typescript": "^3.8.3"
   },
   "dependencies": {
     "@types/cookie-session": "^2.0.41",
